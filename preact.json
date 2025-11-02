@@ -1,11 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./app.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "types": ["preact"],
-    "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "preact"
+    ]
 
     // Note: To use React libraries with Preact, configure path aliasing in your bundler:
     // - Vite: Add alias in vite.config.ts
@@ -18,5 +23,6 @@
     //       'react-dom': 'preact/compat'
     //     }
     //   }
-  }
+  },
+  "extends": "./app.json"
 }

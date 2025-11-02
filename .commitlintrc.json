@@ -1,3 +1,5 @@
 {
-  "extends": ["@gfmio/config-commitlint/commitlint.config.ts"]
+  "extends": [
+    "@gfmio/config-commitlint/commitlint.config.ts"
+  ]
 }

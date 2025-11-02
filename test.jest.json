@@ -1,12 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "types": ["jest", "node"],
     "allowImportingTsExtensions": false,
-    "noEmit": true,
     "allowJs": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
-    "esModuleInterop": true
-  }
+    "noEmit": true,
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "extends": "./base.json"
 }

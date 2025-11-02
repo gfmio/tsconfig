@@ -1,18 +1,24 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
-    "jsx": "preserve",
-    "jsxImportSource": "@builder.io/qwik",
     "allowImportingTsExtensions": true,
-    "noEmit": true,
     "allowJs": true,
     "isolatedModules": true,
-    "resolveJsonModule": true
-  }
+    "jsx": "preserve",
+    "jsxImportSource": "@builder.io/qwik",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "types": [
+      "vite/client"
+    ]
+  },
+  "extends": "./base.json"
 }

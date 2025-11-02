@@ -1,5 +1,22 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
-  "extends": ["@gfmio/tsconfig/biome.json"],
+  "extends": [
+    "@gfmio/config-biome/biome.json"
+  ],
+  "overrides": [
+    {
+      "includes": [
+        "*.json",
+        "!biome.json",
+        "!package.json"
+      ],
+      "json": {
+        "parser": {
+          "allowComments": true,
+          "allowTrailingCommas": true
+        }
+      }
+    }
+  ],
   "root": true
 }

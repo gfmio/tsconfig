@@ -1,18 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "target": "ES2022",
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "types": [],
-    "allowImportingTsExtensions": true,
     "noEmit": true,
-    "allowJs": true,
-    "isolatedModules": true,
     "resolveJsonModule": true,
-    "experimentalDecorators": true,
+    "target": "ES2022",
+    "types": [],
     "useDefineForClassFields": false
-  }
+  },
+  "extends": "./base.json"
 }

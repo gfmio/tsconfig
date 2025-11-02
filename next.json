@@ -1,18 +1,27 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./react.json",
   "compilerOptions": {
-    "types": ["react", "react-dom", "node", "next"],
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "target": "ES2022",
-    "module": "ESNext",
-    "jsx": "preserve",
     "incremental": true,
     "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
     "plugins": [
       {
         "name": "next"
       }
+    ],
+    "target": "ES2022",
+    "types": [
+      "react",
+      "react-dom",
+      "node",
+      "next"
     ]
-  }
+  },
+  "extends": "./react.json"
 }

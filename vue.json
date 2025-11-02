@@ -1,13 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./app.json",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "types": ["vue"],
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+    "types": [
+      "vue"
+    ]
+  },
+  "extends": "./app.json"
 }

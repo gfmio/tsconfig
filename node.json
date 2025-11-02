@@ -1,18 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "allowImportingTsExtensions": false,
-    "noEmit": false,
     "allowJs": true,
-    "types": ["node"],
 
     // Node.js-specific settings
-    "lib": ["ES2022"],
+    "lib": [
+      "ES2022"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
     "resolvePackageJsonExports": true,
-    "resolvePackageJsonImports": true
-  }
+    "resolvePackageJsonImports": true,
+    "target": "ES2022",
+    "types": [
+      "node"
+    ]
+  },
+  "extends": "./base.json"
 }

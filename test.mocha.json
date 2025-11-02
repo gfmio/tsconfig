@@ -1,12 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "types": ["mocha", "node"],
     "allowImportingTsExtensions": false,
-    "noEmit": true,
     "allowJs": true,
     "module": "CommonJS",
-    "moduleResolution": "Node"
-  }
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "types": [
+      "mocha",
+      "node"
+    ]
+  },
+  "extends": "./base.json"
 }

@@ -1,11 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
-    "types": ["vitest/globals", "node"],
     "allowImportingTsExtensions": true,
-    "noEmit": true,
     "allowJs": true,
-    "isolatedModules": true
-  }
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": [
+      "vitest/globals",
+      "node"
+    ]
+  },
+  "extends": "./base.json"
 }

@@ -1,11 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./node.json",
   "compilerOptions": {
+    "lib": [
+      "ES2022"
+    ],
     // Explicitly ESM-only Node.js configuration
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "target": "ES2022",
-    "lib": ["ES2022"]
-  }
+    "target": "ES2022"
+  },
+  "extends": "./node.json"
 }
