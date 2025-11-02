@@ -9,6 +9,7 @@
     "types": [],
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "allowJs": true
+    "allowJs": true,
+    "isolatedModules": true
   }
 }

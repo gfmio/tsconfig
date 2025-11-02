@@ -8,6 +8,7 @@
     "module": "ESNext",
     "jsx": "preserve",
     "incremental": true,
+    "isolatedModules": true,
     "plugins": [
       {
         "name": "next"

@@ -2,12 +2,11 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "types": ["mocha", "node"],
     "allowImportingTsExtensions": false,
-    "noEmit": false,
+    "noEmit": true,
     "allowJs": true,
-    "types": ["node"]
+    "module": "CommonJS",
+    "moduleResolution": "Node"
   }
 }

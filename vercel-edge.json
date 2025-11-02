@@ -2,13 +2,15 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./base.json",
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["ESNext", "Deno.NS"],
-    "allowImportingTsExtensions": false,
+    "lib": ["ESNext"],
+    "types": ["@vercel/edge"],
+    "allowImportingTsExtensions": true,
     "noEmit": true,
     "allowJs": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "resolveJsonModule": true
   }
 }

@@ -4,22 +4,26 @@
     // Environment setup & latest features
     "lib": ["ESNext"],
     "target": "ESNext",
-    "module": "Preserve",
+    "module": "ESNext",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "allowJs": true,
+    // Note: JSX settings should be configured in framework-specific configs
+    // "jsx": "react-jsx",
+    "allowJs": false,
 
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
 
-    // Declaration generation
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "emitDeclarationOnly": false,
+    // Declaration generation (commented out - only relevant when noEmit: false)
+    // These should be enabled in configs that actually emit files (e.g., library.json, node.json)
+    // "declaration": true,
+    // "declarationMap": true,
+    // "sourceMap": true,
+    // "emitDeclarationOnly": false,
 
     // ============================================================================
     // MAXIMUM STRICTNESS SETTINGS
@@ -58,6 +62,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+    "customConditions": [],
 
     // Error handling improvements
     "noErrorTruncation": true,
@@ -65,7 +70,8 @@
     "pretty": true,
 
     // Additional safety checks
-    "checkJs": true,
+    // Note: checkJs is disabled by default. Enable in checkjs.json if needed.
+    // "checkJs": true,
     "allowArbitraryExtensions": false,
     "allowUmdGlobalAccess": false,
 

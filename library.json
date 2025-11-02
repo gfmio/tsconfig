@@ -2,18 +2,20 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./base.json",
   "compilerOptions": {
-    // tsup handles compilation, TypeScript only for type checking
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
+    // Library configuration for maximum compatibility
+    // Use NodeNext for dual ESM/CJS support
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
 
-    // Type generation settings (tsup will use these)
+    // Enable emission for library builds
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+
+    // Type generation for published libraries
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-
-    // Module resolution for bundlers
-    "moduleResolution": "bundler",
-    "target": "ESNext",
-    "module": "ESNext"
+    "emitDeclarationOnly": false
   }
 }

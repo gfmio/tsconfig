@@ -4,6 +4,8 @@
   "compilerOptions": {
     "types": ["vitest/globals", "node"],
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "allowJs": true,
+    "isolatedModules": true
   }
 }
