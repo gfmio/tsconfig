@@ -8,6 +8,11 @@
     "allowImportingTsExtensions": false,
     "noEmit": false,
     "allowJs": true,
-    "types": ["node"]
+    "types": ["node"],
+
+    // Node.js-specific settings
+    "lib": ["ES2022"],
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true
   }
 }

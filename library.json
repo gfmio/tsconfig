@@ -7,15 +7,22 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES2022",
+    "lib": ["ES2022"],
 
     // Enable emission for library builds
     "noEmit": false,
     "allowImportingTsExtensions": false,
+    "allowJs": true,
 
     // Type generation for published libraries
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "emitDeclarationOnly": false
+    "emitDeclarationOnly": false,
+
+    // Library-specific optimizations
+    "stripInternal": true,
+    "removeComments": true,
+    "importHelpers": true
   }
 }

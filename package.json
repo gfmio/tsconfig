@@ -41,6 +41,7 @@
     "./serviceworker.json": "./serviceworker.json",
     "./sharedworker.json": "./sharedworker.json",
     "./solid.json": "./solid.json",
+    "./strict-minimal.json": "./strict-minimal.json",
     "./svelte.json": "./svelte.json",
     "./test.ava.json": "./test.ava.json",
     "./test.bun.json": "./test.bun.json",
@@ -54,6 +55,7 @@
   "files": [
     "base.json",
     "checkjs.json",
+    "strict-minimal.json",
     "node.json",
     "node-esm.json",
     "node-cjs.json",

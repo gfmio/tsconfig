@@ -25,6 +25,13 @@
     // "sourceMap": true,
     // "emitDeclarationOnly": false,
 
+    // Emit settings (relevant when noEmit: false)
+    "removeComments": false,
+    "importHelpers": false,
+    "importsNotUsedAsValues": "remove",
+    "downlevelIteration": true,
+    "newLine": "lf",
+
     // ============================================================================
     // MAXIMUM STRICTNESS SETTINGS
     // ============================================================================
@@ -64,10 +71,15 @@
     "resolveJsonModule": true,
     "customConditions": [],
 
-    // Error handling improvements
+    // Error handling and output improvements
     "noErrorTruncation": true,
     "preserveWatchOutput": false,
     "pretty": true,
+    "listEmittedFiles": false,
+    "listFiles": false,
+
+    // Watch mode optimizations
+    "assumeChangesOnlyAffectDirectDependencies": false,
 
     // Additional safety checks
     // Note: checkJs is disabled by default. Enable in checkjs.json if needed.

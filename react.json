@@ -5,6 +5,9 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "types": ["react", "react-dom", "react/jsx-runtime"],
-    "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+
+    // React-specific optimizations
+    "useDefineForClassFields": true
   }
 }
