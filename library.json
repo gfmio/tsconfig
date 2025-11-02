@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "compilerOptions": {
+    // tsup handles compilation, TypeScript only for type checking
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
+    // Type generation settings (tsup will use these)
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // Module resolution for bundlers
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "module": "ESNext"
+  }
+}

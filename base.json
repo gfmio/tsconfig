@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Environment setup & latest features
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    // Declaration generation
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "emitDeclarationOnly": false,
+
+    // ============================================================================
+    // MAXIMUM STRICTNESS SETTINGS
+    // ============================================================================
+
+    // Core strict mode - enables all strict type checking options
+    "strict": true,
+    // Individual strict flags (included in strict but listed for clarity)
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+
+    // Additional strictness checks
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitOverride": true,
+
+    // Code quality checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Module and resolution strictness
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    // Error handling improvements
+    "noErrorTruncation": true,
+    "preserveWatchOutput": false,
+    "pretty": true,
+
+    // Additional safety checks
+    "checkJs": true,
+    "allowArbitraryExtensions": false,
+    "allowUmdGlobalAccess": false,
+
+    // Skip lib check for performance (but still maintain strict type checking)
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": false
+  }
+}
