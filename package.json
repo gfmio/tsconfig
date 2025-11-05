@@ -11,6 +11,7 @@
     "@commitlint/config-conventional": "^20.0.0",
     "@gfmio/config-biome": "^1.0.2",
     "@gfmio/config-commitlint": "^1.0.0",
+    "@types/deno": "^2.5.0",
     "typescript": "^5.9.3"
   },
   "exports": {
@@ -108,6 +109,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gfmio/tsconfig"
+  },
+  "scripts": {
+    "validate": "bun run scripts/validate-tsconfigs.ts"
   },
   "type": "module",
   "version": "0.0.0"

@@ -9,6 +9,7 @@
         "@commitlint/config-conventional": "^20.0.0",
         "@gfmio/config-biome": "^1.0.2",
         "@gfmio/config-commitlint": "^1.0.0",
+        "@types/deno": "^2.5.0",
         "typescript": "^5.9.3",
       },
       "peerDependencies": {
@@ -80,6 +81,8 @@
     "@ngx-devs/commitlint-plugin-imperative": ["@ngx-devs/commitlint-plugin-imperative@1.1.4", "", { "peerDependencies": { "@commitlint/lint": ">=7.6.0" } }, "sha512-HktFA+kg0fEWc6eLhNUDgN1gZnDsKxUyiKD+tv5QQyw2LhKdIdi5RLdITdtIse9rFHhDycPff+mxAFSEHigZ6A=="],
 
     "@types/conventional-commits-parser": ["@types/conventional-commits-parser@5.0.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-BgT2szDXnVypgpNxOK8aL5SGjUdaQbC++WZNjF1Qge3Og2+zhHj+RWhmehLhYyvQwqAmvezruVfOf8+3m74W+g=="],
+
+    "@types/deno": ["@types/deno@2.5.0", "", {}, "sha512-g8JS38vmc0S87jKsFzre+0ZyMOUDHPVokEJymSCRlL57h6f/FdKPWBXgdFh3Z8Ees9sz11qt9VWELU9Y9ZkiVw=="],
 
     "@types/node": ["@types/node@24.9.2", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA=="],
 
