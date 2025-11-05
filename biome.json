@@ -16,6 +16,18 @@
           "allowTrailingCommas": true
         }
       }
+    },
+    {
+      "includes": [
+        "scripts/validate-tsconfigs.ts"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off"
+          }
+        }
+      }
     }
   ],
   "root": true
