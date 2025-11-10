@@ -8,7 +8,7 @@
         "@commitlint/cli": "^20.1.0",
         "@commitlint/config-conventional": "^20.0.0",
         "@gfmio/config-biome": "^1.0.2",
-        "@gfmio/config-commitlint": "^1.0.0",
+        "@gfmio/config-commitlint": "^1.0.1",
         "@types/deno": "^2.5.0",
         "typescript": "^5.9.3",
       },
@@ -76,7 +76,7 @@
 
     "@gfmio/config-biome": ["@gfmio/config-biome@1.0.2", "", { "peerDependencies": { "@biomejs/biome": "^2.3.0" } }, "sha512-rFG0Pt/T1r3d38Cdshhq4uSeanych74ko+1TfutSFXJINQLugD21hes8pkvzF8QI1fr47JIkXC0i54+CnuLrGg=="],
 
-    "@gfmio/config-commitlint": ["@gfmio/config-commitlint@1.0.0", "", { "dependencies": { "@commitlint/types": "^20.0.0" }, "peerDependencies": { "@commitlint/cli": "^20.1.0", "@commitlint/config-conventional": "^20.0.0", "@ngx-devs/commitlint-plugin-imperative": "^1.1.4" } }, "sha512-1LkQWz1ZKbIuSAsZnq095MEsCr3GyFTqkpA/KIgpMaVHavvhmXVO/Wp/kOdB1EFMxrmCvWyqHs7YH929kQ1SaA=="],
+    "@gfmio/config-commitlint": ["@gfmio/config-commitlint@1.0.1", "", { "dependencies": { "@commitlint/types": "^20.0.0" }, "peerDependencies": { "@commitlint/cli": "^20.1.0", "@commitlint/config-conventional": "^20.0.0", "@ngx-devs/commitlint-plugin-imperative": "^1.1.4" } }, "sha512-2pwBicKCfanlmfJL52f1tRkAlENehbnZtLtwQCVUM57ALYmxYCoBasJ45t5kKnZ/o4zNu42WjsGQuRIC0dC6Eg=="],
 
     "@ngx-devs/commitlint-plugin-imperative": ["@ngx-devs/commitlint-plugin-imperative@1.1.4", "", { "peerDependencies": { "@commitlint/lint": ">=7.6.0" } }, "sha512-HktFA+kg0fEWc6eLhNUDgN1gZnDsKxUyiKD+tv5QQyw2LhKdIdi5RLdITdtIse9rFHhDycPff+mxAFSEHigZ6A=="],
 

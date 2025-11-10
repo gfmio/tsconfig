@@ -10,7 +10,7 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@gfmio/config-biome": "^1.0.2",
-    "@gfmio/config-commitlint": "^1.0.0",
+    "@gfmio/config-commitlint": "^1.0.1",
     "@types/deno": "^2.5.0",
     "typescript": "^5.9.3"
   },
