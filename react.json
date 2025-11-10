@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "react",
+      "react-dom",
+      "react/jsx-runtime"
+    ],
+
+    // React-specific optimizations
+    "useDefineForClassFields": true
+  },
+  "extends": "./app.json"
+}

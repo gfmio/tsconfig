@@ -1,0 +1,34 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.4/schema.json",
+  "extends": [
+    "@gfmio/config-biome/biome.json"
+  ],
+  "overrides": [
+    {
+      "includes": [
+        "*.json",
+        "!biome.json",
+        "!package.json"
+      ],
+      "json": {
+        "parser": {
+          "allowComments": true,
+          "allowTrailingCommas": true
+        }
+      }
+    },
+    {
+      "includes": [
+        "scripts/validate-tsconfigs.ts"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off"
+          }
+        }
+      }
+    }
+  ],
+  "root": true
+}

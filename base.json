@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": true,
+    // Note: JSX settings should be configured in framework-specific configs
+    // "jsx": "react-jsx",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUmdGlobalAccess": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    // Individual strict flags (included in strict but listed for clarity)
+    "alwaysStrict": true,
+
+    // Watch mode optimizations
+    "assumeChangesOnlyAffectDirectDependencies": false,
+
+    // Additional safety checks
+    // Note: checkJs is disabled by default. Enable in checkjs.json if needed.
+    "checkJs": false,
+    "customConditions": [],
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+
+    // Additional strictness checks
+    "exactOptionalPropertyTypes": true,
+
+    // Module and resolution strictness
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": false,
+    "isolatedModules": true,
+    // Environment setup & latest features
+    "lib": [
+      "ESNext"
+    ],
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "module": "ESNext",
+    "moduleDetection": "force",
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "newLine": "lf",
+    "noEmit": true,
+
+    // Error handling and output improvements
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Code quality checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "preserveWatchOutput": false,
+    "pretty": true,
+
+    // Declaration generation (commented out - only relevant when noEmit: false)
+    // These should be enabled in configs that actually emit files (e.g., library.json, node.json)
+    // "declaration": true,
+    // "declarationMap": true,
+    // "sourceMap": true,
+    // "emitDeclarationOnly": false,
+
+    // Emit settings (relevant when noEmit: false)
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "skipDefaultLibCheck": false,
+
+    // Skip lib check for performance (but still maintain strict type checking)
+    "skipLibCheck": true,
+
+    // ============================================================================
+    // MAXIMUM STRICTNESS SETTINGS
+    // ============================================================================
+
+    // Core strict mode - enables all strict type checking options
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "ESNext",
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true
+  }
+}

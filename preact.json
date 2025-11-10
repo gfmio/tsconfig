@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "preact"
+    ]
+
+    // Note: To use React libraries with Preact, configure path aliasing in your bundler:
+    // - Vite: Add alias in vite.config.ts
+    // - Webpack: Add resolve.alias in webpack.config.js
+    // - esbuild: Use --alias flag
+    // Example (Vite):
+    //   resolve: {
+    //     alias: {
+    //       'react': 'preact/compat',
+    //       'react-dom': 'preact/compat'
+    //     }
+    //   }
+  },
+  "extends": "./app.json"
+}

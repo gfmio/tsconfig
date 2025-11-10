@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "lib": [
+      "ES2022"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // Optimized for Node.js LTS (currently v20)
+    // Update target/lib when LTS version changes
+    "target": "ES2022"
+  },
+  "extends": "./node.json"
+}

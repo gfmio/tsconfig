@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": false,
+
+    // Module settings
+    "esModuleInterop": true,
+
+    // Essential safety checks (always recommended)
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    // Minimal strict configuration for gradual TypeScript adoption
+    // Use this when migrating JS projects to TS or when full strict mode is too aggressive
+
+    // Basic setup
+    "lib": [
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noImplicitAny": false,
+
+    // Output
+    "pretty": true,
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "skipLibCheck": true,
+
+    // Minimal strictness (easier migration path)
+    "strict": false,
+    "strictNullChecks": false,
+    "target": "ESNext",
+    "verbatimModuleSyntax": true
+  }
+}

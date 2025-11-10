@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "allowJs": true,
+
+    // Type generation for published libraries
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "importHelpers": true,
+    "lib": [
+      "ES2022"
+    ],
+    // Library configuration for maximum compatibility
+    // Use NodeNext for dual ESM/CJS support
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // Enable emission for library builds
+    "noEmit": false,
+    "removeComments": true,
+    "sourceMap": true,
+
+    // Library-specific optimizations
+    "stripInternal": true,
+    "target": "ES2022"
+  },
+  "extends": "./base.json"
+}

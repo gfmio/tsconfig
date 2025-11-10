@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    // Optimized for monorepo setups
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+
+    // Module resolution
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": false,
+
+    // Performance optimizations
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2022"
+  },
+  "extends": "./base.json"
+}

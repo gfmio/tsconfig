@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "allowJs": true,
+    "isolatedModules": true,
+    // Note: Deno.NS is Deno-specific and provided by the Deno runtime.
+    // For validation with standard TypeScript, install @types/deno.
+    "lib": [
+      "ESNext",
+      "Deno.NS"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "target": "ESNext"
+  },
+  "extends": "./base.json"
+}
