@@ -29,7 +29,6 @@
     // Module and resolution strictness
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
-    "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
     // Environment setup & latest features
     "lib": [
